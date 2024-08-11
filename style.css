@@ -1,0 +1,59 @@
+. {
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+body {
+  background: rgba(0, 255, 255, 0.38);
+}
+/* <!-- Header section  --> */
+header {
+  height: 10vh;
+  width: 100%;
+  border: 1px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+header > div {
+  display: flex;
+  padding: 1rem;
+}
+header hr {
+  border: 1px solid red;
+}
+.name {
+  display: flex;
+  justify-content: center;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1em;
+}
+header ul li:hover {
+  cursor: pointer;
+  color: red;
+}
+/* <!-- Hero Section  --> */
+
+/* <!-- Banner section  --> */
+
+/* <!-- Skills section  --> */
+
+/* <!-- My projects section  --> */
+
+/* <!-- About me section  --> */
+
+/* <!-- Contact section  --> */
+
+/* <!-- Footer  --> */
