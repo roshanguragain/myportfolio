@@ -7,6 +7,8 @@
 
   --dark-bg: var(--color-dark);
   --dark-text-color: white;
+
+  --shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.461);
 }
 * {
   box-sizing: border-box;
@@ -17,6 +19,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
+  max-width: 1400px;
 }
 .joti-one-regular {
   font-family: "Joti One", serif;
@@ -46,10 +49,10 @@ a {
 }
 /* <!-- Header section  --> */
 header {
-  box-shadow: 4px -2px 40px 9px rgba(128, 128, 128, 0.461);
+  box-shadow: var(--shadow)
   position: sticky;
   top: 0px;
-  background: var(--body-bg);
+  background:var(--body-bg);
 }
 header .header {
   justify-content: space-between;
@@ -106,7 +109,47 @@ header .header {
 #mode {
   display: none;
 }
-/* <!-- Hero Section  --> */
+/* <!-- Hero Section  -->*/
+.hero-section {
+  margin-top: 5rem;
+  max-height: 60vh;
+}
+.hero {
+  background: var(--color-orange);
+  grid-template-areas: "left right";
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+.left {
+  grid-area: left;
+  flex-direction: column;
+  margin-left: 10vw;
+  justify-content: center;
+}
+.left span {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.left .tag {
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+.left button {
+  background: var(--color-dark);
+  color: var(--dark-text-color);
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.right {
+  grid-area: right;
+  justify-content: end;
+  align-items: center;
+  margin-top: -13rem;
+}
+.right img {
+  height: 115%;
+}
 
 /* <!-- Banner section  --> */
 
