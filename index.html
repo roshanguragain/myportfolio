@@ -3,29 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joti+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <title>Roshan's Portfolio</title>
   </head>
   <body>
+     <!-- Dark Mode toggler -->
+     
+     
+     <input type="checkbox" id="mode">
     <div class="wrapper">
+        <label for="mode"><i class="fa-solid fa-circle-half-stroke"></i></label>
+
       <!-- Header section  -->
-      <div class="container">
-        <header>
-          <div class="name">
-            <h2>Roshan</h2>
-            <hr />
-            <p>Soft. Engineer</p>
-          </div>
-          <div class="menu">
-            <ul>
-              <li>Home</li>
-              <li>Skills</li>
-              <li>Projects</li>
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-        </header>
+      
+       <header>
+        <div class="header container flex">
+            <div class="logo flex">
+                <div>Roshan</div>
+                <div class="line">Soft. Engineer</div>
+            </div>
+            <div class="menu">
+                <ul class="flex nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+       </header>
       </div>
       <!-- Hero Section  -->
        <div class="container">
@@ -40,7 +54,7 @@
                 
             </div>
         </section>
-       </div>
+       
 
       <!-- Banner section  -->
 
